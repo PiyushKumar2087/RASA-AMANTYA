@@ -1,0 +1,388 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: weathers
+  examples: |
+    - weathers
+    - tell weathers
+    - what is weather today
+    - how is weather today
+
+- intent: hello_world
+  examples: |
+    - hello
+    - hello world
+    - first program
+
+
+- intent: total_online_device
+  examples: |
+    - show total online device in this network
+    - total number of online device
+    - total online devices
+    - online devices
+    - devices online
+    - online node
+    - total number of online node
+    - total number of online node in this network
+
+
+- intent: total_offline_device
+  examples: |
+    - show total offline device in this network
+    - total number of offline device
+    - total offline devices
+    - offline devices
+    - devices offline
+    - offline node
+    - total number of offline node
+    - total number of offline node in this network
+
+
+- intent: show_alarm
+  examples: |
+    - show all alarm
+    - alarms
+    - show total alarms
+    - show alarms
+    - provide all alarms
+    - list down all alarms
+    - list of alarms
+
+
+- intent: show_major_alarm
+  examples: |
+    - show all major alarm
+    - major alarms
+    - show total major alarms
+    - show major alarms
+    - provide all major alarms
+    - list down all major alarms
+    - list of major alarms
+
+
+- intent: show_minor_alarm
+  examples: |
+    - show all minor alarm
+    - minor alarms
+    - show total minor alarms
+    - show minor alarms
+    - provide all minor alarms
+    - list down all minor alarms
+    - list of minor alarms
+
+
+- intent: show_critical_alarm
+  examples: |
+    - show all critical alarm
+    - critical alarms
+    - show total critical alarms
+    - show critical alarms
+    - provide all critical alarms
+    - list down all critical alarms
+    - list of critical alarms
+
+
+- intent: show_cleared_alarm
+  examples: |
+    - show all cleared alarm
+    - cleared alarms
+    - show total cleared alarms
+    - show cleared alarms
+    - provide all cleared alarms
+    - list down all cleared alarms
+    - list of cleared alarms
+
+
+
+- intent: show_ACK_Minor_alarms
+  examples: |
+    - show all ACK minor alarm
+    - ACK minor alarms
+    - show total ACK minor alarms
+    - show ACK minor alarms
+    - provide all ACK minor alarms
+    - list down all ACK minor alarms
+    - list of ACK minor alarms
+    - show all ackonwledged minor alarm
+    - ackonwledged minor alarms
+    - show total ackonwledged minor alarms
+    - show ackonwledged minor alarms
+    - provide all ackonwledged minor alarms
+    - list down all ackonwledged minor alarms
+    - list of ackonwledged minor alarms
+
+- intent: show_ACK_Major_alarms
+  examples: |
+    - show all ACK major alarm
+    - ACK major alarms
+    - show total ACK major alarms
+    - show ACK major alarms
+    - provide all ACK major alarms
+    - list down all ACK major alarms
+    - list of ACK major alarms
+    - show all ackonwledged major alarm
+    - ackonwledged major alarms
+    - show total ackonwledged major alarms
+    - show ackonwledged major alarms
+    - provide all ackonwledged major alarms
+    - list down all ackonwledged major alarms
+    - list of ackonwledged major alarms
+
+- intent: show_ACK_Critical_alarms
+  examples: |
+    - show all ACK critical alarm
+    - ACK critical alarms
+    - show total ACK critical alarms
+    - show ACK critical alarms
+    - provide all ACK critical alarms
+    - list down all ACK critical alarms
+    - list of ACK critical alarms
+    - show all ackonwledged critical alarm
+    - ackonwledged critical alarms
+    - show total ackonwledged critical alarms
+    - show ackonwledged critical alarms
+    - provide all ackonwledged critical alarms
+    - list down all ackonwledged critical alarms
+    - list of ackonwledged critical alarms
+
+- intent: show_ACK_Cleared_alarms
+  examples: |
+    - show all ACK cleared alarm
+    - ACK cleared alarms
+    - show total ACK cleared alarms
+    - show ACK cleared alarms
+    - provide all ACK cleared alarms
+    - list down all ACK cleared alarms
+    - list of ACK cleared alarms
+    - show all ackonwledged cleared alarm
+    - ackonwledged cleared alarms
+    - show total ackonwledged cleared alarms
+    - show ackonwledged cleared alarms
+    - provide all ackonwledged cleared alarms
+    - list down all ackonwledged cleared alarms
+    - list of ackonwledged cleared alarms
+
+
+- intent: show_NonACK_Minor_alarms
+  examples: |
+    - show all non ACK minor alarm
+    - non ACK minor alarms
+    - show total Anon CK minor alarms
+    - show non ACK minor alarms
+    - provide all non ACK minor alarms
+    - list down all non ACK minor alarms
+    - list of non ACK minor alarms
+    - show all non ackonwledged minor alarm
+    - non ackonwledged minor alarms
+    - show total non ackonwledged minor alarms
+    - show non ackonwledged minor alarms
+    - provide all non ackonwledged minor alarms
+    - list down all non ackonwledged minor alarms
+    - list of non ackonwledged minor alarms
+
+- intent: show_NonACK_Major_alarms
+  examples: |
+    - show all non ACK major alarm
+    - non ACK major alarms
+    - show total non ACK major alarms
+    - show non ACK major alarms
+    - provide all non ACK major alarms
+    - list down all non ACK major alarms
+    - list of non ACK major alarms
+    - show all non ackonwledged major alarm
+    - non ackonwledged major alarms
+    - show total non ackonwledged major alarms
+    - show non ackonwledged major alarms
+    - provide all non ackonwledged major alarms
+    - list down all non ackonwledged major alarms
+    - list of non ackonwledged major alarms
+
+- intent: show_NonACK_Critical_alarms
+  examples: |
+    - show all non ACK critical alarm
+    - non ACK critical alarms
+    - show total non ACK critical alarms
+    - show non ACK critical alarms
+    - provide all non ACK critical alarms
+    - list down all non ACK critical alarms
+    - list of non ACK critical alarms
+    - show all non ackonwledged critical alarm
+    - non ackonwledged critical alarms
+    - show total non ackonwledged critical alarms
+    - show non ackonwledged critical alarms
+    - provide all non ackonwledged critical alarms
+    - list down all non ackonwledged critical alarms
+    - list of non ackonwledged critical alarms
+
+- intent: show_NonACK_Cleared_alarms
+  examples: |
+    - show all non ACK cleared alarm
+    - non ACK cleared alarms
+    - show total non ACK cleared alarms
+    - show non ACK cleared alarms
+    - provide all non ACK cleared alarms
+    - list down all non ACK cleared alarms
+    - list of non ACK cleared alarms
+    - show all non ackonwledged cleared alarm
+    - non ackonwledged cleared alarms
+    - show total non ackonwledged cleared alarms
+    - show non ackonwledged cleared alarms
+    - provide all non ackonwledged cleared alarms
+    - list down all non ackonwledged cleared alarms
+    - list of non ackonwledged cleared alarms
+
+
+- intent: ACK_Minor_alarms
+  examples: |
+    - ACK all minor alarm
+    - ACK minor alarms
+    - do acknowledge all minor alarms
+    - do acknowledge minor alarms
+    - ACK all minor alarms of this network
+    - acknowledge all minor alarms of this network
+
+- intent: ACK_Major_alarms
+  examples: |
+    - ACK all major alarm
+    - ACK major alarms
+    - do acknowledge all major alarms
+    - do acknowledge major alarms
+    - ACK all major alarms of this network
+    - acknowledge all major alarms of this network
+
+- intent: ACK_Critical_alarms
+  examples: |
+    - ACK all critical alarm
+    - ACK critical alarms
+    - do acknowledge all critical alarms
+    - do acknowledge critical alarms
+    - ACK all critical alarms of this network
+    - acknowledge all critical alarms of this network
+
+- intent: ACK_Cleared_alarms
+  examples: |
+    - ACK all cleared alarm
+    - ACK cleared alarms
+    - do acknowledge all cleared alarms
+    - do acknowledge cleared alarms
+    - ACK all cleared alarms of this network
+    - acknowledge all cleared alarms of this network
+
+- intent: NonACK_Minor_alarms
+  examples: |
+    - Non-ACK all minor alarm
+    - Non-ACK minor alarms
+    - do Non acknowledge all minor alarms
+    - do Non acknowledge minor alarms
+    - Non-ACK all minor alarms of this network
+    - Non acknowledge all minor alarms of this network
+
+
+- intent: NonACK_Major_alarms
+  examples: |
+    - Non-ACK all major alarm
+    - Non-ACK major alarms
+    - do Non acknowledge all major alarms
+    - do Non acknowledge major alarms
+    - Non-ACK all major alarms of this network
+    - Non acknowledge all major alarms of this network
+
+
+- intent: NonACK_Critical_alarms
+  examples: |
+    - Non-ACK all critical alarm
+    - Non-ACK critical alarms
+    - do Non acknowledge all critical alarms
+    - do Non acknowledge critical alarms
+    - Non-ACK all critical alarms of this network
+    - Non acknowledge all critical alarms of this network
+
+- intent: NonACK_Cleared_alarms
+  examples: |
+    - Non-ACK all cleared alarm
+    - Non-ACK cleared alarms
+    - do Non acknowledge all cleared alarms
+    - do Non acknowledge cleared alarms
+    - Non-ACK all cleared alarms of this network
+    - Non acknowledge all cleared alarms of this network

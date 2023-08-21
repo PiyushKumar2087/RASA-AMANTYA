@@ -1,0 +1,88 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - weathers
+  - hello_world
+  - total_online_device
+  - total_offline_device
+  - show_alarm
+  - show_major_alarm
+  - show_minor_alarm
+  - show_critical_alarm
+  - show_cleared_alarm
+  - show_ACK_Minor_alarms
+  - show_ACK_Major_alarms
+  - show_ACK_Critical_alarms
+  - show_ACK_Cleared_alarms
+  - show_NonACK_Minor_alarms
+  - show_NonACK_Major_alarms
+  - show_NonACK_Critical_alarms
+  - show_NonACK_Cleared_alarms
+  - ACK_Minor_alarms
+  - ACK_Major_alarms
+  - ACK_Critical_alarms
+  - ACK_Cleared_alarms
+  - NonACK_Minor_alarms
+  - NonACK_Major_alarms
+  - NonACK_Critical_alarms
+  - NonACK_Cleared_alarms
+
+actions:
+ - action_hello_world
+ - action_total_online_device
+ - action_total_offline_device
+ - action_show_alarms
+ - action_show_major_alarms
+ - action_show_minor_alarms
+ - action_show_critical_alarms
+ - action_show_cleared_alarms
+ - action_show_ACK_Minor_alarms
+ - action_show_ACK_Major_alarms
+ - action_show_ACK_Critical_alarms
+ - action_show_ACK_Cleared_alarms
+ - action_show_NonACK_Minor_alarms
+ - action_show_NonACK_Major_alarms
+ - action_show_NonACK_Critical_alarms
+ - action_show_NonACK_Cleared_alarms
+ - action_ACK_Minor_alarms
+ - action_ACK_Major_alarms
+ - action_ACK_Critical_alarms
+ - action_ACK_Cleared_alarms
+ - action_NonACK_Minor_alarms
+ - action_NonACK_Major_alarms
+ - action_NonACK_Critical_alarms
+ - action_NonACK_Cleared_alarms
+ 
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_weather:
+  - text: "weather is good today"
+  
+
+
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

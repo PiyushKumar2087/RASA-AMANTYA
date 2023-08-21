@@ -1,0 +1,155 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: weather
+  steps: 
+  - intent: weathers
+  - action: utter_weather
+
+- story: hello world
+  steps:
+  - intent: hello_world
+  - action: action_hello_world
+
+- story: total online device
+  steps:
+  - intent: total_online_device
+  - action: action_total_online_device
+
+- story: total offline device
+  steps:
+  - intent: total_offline_device
+  - action: action_total_offline_device
+
+- story: total show alarm
+  steps:
+  - intent: show_alarm
+  - action: action_show_alarms
+
+- story: total show major alarm
+  steps:
+  - intent: show_major_alarm
+  - action: action_show_major_alarms
+
+- story: total show minor alarm
+  steps:
+  - intent: show_minor_alarm
+  - action: action_show_minor_alarms
+
+
+- story: total show critical alarm
+  steps:
+  - intent: show_critical_alarm
+  - action: action_show_critical_alarms
+
+
+- story: total show cleared alarm
+  steps:
+  - intent: show_cleared_alarm
+  - action: action_show_cleared_alarms
+
+
+- story: total show ACK minor alarm
+  steps:
+  - intent: show_ACK_Minor_alarms
+  - action: action_show_ACK_Minor_alarms
+
+- story: total show ACK major alarm
+  steps:
+  - intent: show_ACK_Major_alarms
+  - action: action_show_ACK_Major_alarms
+
+- story: total show ACK critical alarm
+  steps:
+  - intent: show_ACK_Critical_alarms
+  - action: action_show_ACK_Critical_alarms
+
+- story: total show ACK cleared alarm
+  steps:
+  - intent: show_ACK_Cleared_alarms
+  - action: action_show_ACK_Cleared_alarms
+
+- story: total show NonACK minor alarm
+  steps:
+  - intent: show_NonACK_Minor_alarms
+  - action: action_show_NonACK_Minor_alarms
+
+- story: total show NonACK major alarm
+  steps:
+  - intent: show_NonACK_Major_alarms
+  - action: action_show_NonACK_Major_alarms
+
+- story: total show NonACK critical alarm
+  steps:
+  - intent: show_NonACK_Critical_alarms
+  - action: action_show_NonACK_Critical_alarms
+
+- story: total show NonACK cleared alarm
+  steps:
+  - intent: show_NonACK_Cleared_alarms
+  - action: action_show_NonACK_Cleared_alarms
+
+- story: ACK minor alarms
+  steps:
+  - intent: ACK_Minor_alarms
+  - action: action_ACK_Minor_alarms
+
+- story: ACK major alarms
+  steps:
+  - intent: ACK_Major_alarms
+  - action: action_ACK_Major_alarms
+
+- story: ACK critical alarms
+  steps:
+  - intent: ACK_Critical_alarms
+  - action: action_ACK_Critical_alarms
+
+- story: ACK cleared alarms
+  steps:
+  - intent: ACK_Cleared_alarms
+  - action: action_ACK_Cleared_alarms
+
+- story: NonACK minor alarms
+  steps:
+  - intent: NonACK_Minor_alarms
+  - action: action_NonACK_Minor_alarms
+
+- story: NonACK major alarms
+  steps:
+  - intent: NonACK_Major_alarms
+  - action: action_NonACK_Major_alarms
+
+- story: NonACK critical alarms
+  steps:
+  - intent: NonACK_Critical_alarms
+  - action: action_NonACK_Critical_alarms
+
+
+- story: NonACK cleared alarms
+  steps:
+  - intent: NonACK_Cleared_alarms
+  - action: action_NonACK_Cleared_alarms
+
